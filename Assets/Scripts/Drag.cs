@@ -6,7 +6,7 @@ public class Drag : MonoBehaviour
 {
     private bool dragging = false;
     private Vector3 offset;
-
+    
 
 
     // Update is called once per frame
@@ -27,6 +27,7 @@ public class Drag : MonoBehaviour
 
     private void OnMouseUp()
     {
+       
         dragging = false;//Stop dragging
     }
 }
