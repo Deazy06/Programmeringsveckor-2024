@@ -10,6 +10,15 @@ public class Drag : MonoBehaviour
    
     public BoxCollider2D area;
 
+   
+
+    private void Start()
+    {
+
+        
+
+    }
+
     // Update is called once per frame
     void Update()
     {
