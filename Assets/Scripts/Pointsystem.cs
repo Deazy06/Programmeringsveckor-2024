@@ -16,7 +16,7 @@ public class Pointsystem : MonoBehaviour
 
     void Update()
     {
-        if (choice= true) // om man gör rätt val får man 100 pengar
+        if (choice == true) // om man gör rätt val får man 100 pengar
         {
             print("Point added");
             Money += 100;
