@@ -5,7 +5,17 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     // Variabler för spawnmanager RADERA EJ :prayers:
-    public bool yes;
-    public bool no;
+    static public bool yes;
+    static public bool no;
+
+    static public bool spawnPermit = false;
+
+    public void resetPermitSpawnable()
+    {
+        if (spawnPermit == true)
+        {
+            spawnPermit = false;
+        }
+    }
 
 }

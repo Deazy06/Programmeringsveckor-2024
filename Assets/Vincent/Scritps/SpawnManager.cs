@@ -44,6 +44,7 @@ public class SpawnManager : GameManager
     public void Start()
     {
         spawnedCharacter = Instantiate(char_Prefab, new Vector3(0, 3, 0), Quaternion.identity);
+        spawnPermit = true;
 
         yes = false;
         no = false;
@@ -54,6 +55,7 @@ public class SpawnManager : GameManager
         if (spawnedCharacter != null)
         {
             Destroy(spawnedCharacter);
+            resetPermitSpawnable();
         }
     }
 
