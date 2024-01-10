@@ -10,12 +10,35 @@ public class GameManager : MonoBehaviour
 
     static public bool spawnPermit = false;
 
+    public GameObject spawnedCharacter;
+    public GameObject spawnableObj;
+
     public void resetPermitSpawnable()
     {
         if (spawnPermit == true)
         {
             spawnPermit = false;
+            destroyPermit();
         }
+
+        
     }
 
+    public void DestroyPreviousCharacter()
+    {
+        if (spawnedCharacter != null)
+        {
+            Destroy(spawnedCharacter);
+
+            resetPermitSpawnable();
+        }
+    }
+    public void destroyPermit()
+    {
+        if (spawnableObj != null)
+        {
+            Destroy(spawnableObj);
+            Debug.Log("Succesfully destroyed a permit");
+        }
+    }
 }
