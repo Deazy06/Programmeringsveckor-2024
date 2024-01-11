@@ -8,14 +8,18 @@ public class Drag : MonoBehaviour
     private Vector3 offset;
 
    
+   
     public BoxCollider2D area;
 
-   
+    
+    
 
     private void Start()
     {
+        GameObject Background = GameObject.FindWithTag("area");
 
-        
+        area = Background.GetComponent<BoxCollider2D>();
+
 
     }
 

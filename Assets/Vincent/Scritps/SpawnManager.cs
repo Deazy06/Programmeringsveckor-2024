@@ -7,7 +7,6 @@ public class SpawnManager : GameManager
 {
 
     public GameObject char_Prefab;
-    private GameObject spawnedCharacter;
 
     public float timer;
 
@@ -50,23 +49,18 @@ public class SpawnManager : GameManager
         no = false;
     }
 
-    private void DestroyPreviousCharacter()
-    {
-        if (spawnedCharacter != null)
-        {
-            Destroy(spawnedCharacter);
-            resetPermitSpawnable();
-        }
-    }
+
 
     public void Ja()
     {
         yes = true;
+        spawnPermit = true;
     }
 
     public void Nej()
     {
         no = true;
+        spawnPermit = true;
     }
 
 }
