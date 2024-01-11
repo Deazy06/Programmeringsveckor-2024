@@ -16,7 +16,7 @@ public class Pointsystem : MonoBehaviour
 
     void Update()
     {
-        if (choice= true) // om man gör rätt val får man 100 pengar
+        if (choice == true) // om man gï¿½r rï¿½tt val fï¿½r man 100 pengar
         {
             print("Point added");
             Money += 100;
@@ -24,7 +24,7 @@ public class Pointsystem : MonoBehaviour
         else
         {
             print("No point added");
-            //möjlighet för "dålig preformance" (man får sparken efter x antal fel)
+            //mï¿½jlighet fï¿½r "dï¿½lig preformance" (man fï¿½r sparken efter x antal fel)
         }
     }
 }
