@@ -8,12 +8,15 @@ public class GameManager : MonoBehaviour
     static public bool yes;
     static public bool no;
 
+    public int maxAmountOfCharacters;
+    public int randomMaxAmountOfCharacters;
+
     static public bool spawnPermit = false;
 
     public GameObject spawnedCharacter;
     public GameObject spawnableObj;
 
-    public void resetPermitSpawnable()
+    public void resetPermitSpawnable() // reset functionen att id/ permits kunna spawna
     {
         if (spawnPermit == true)
         {
@@ -24,7 +27,7 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void DestroyPreviousCharacter()
+    public void DestroyPreviousCharacter() // förstör förra id/ permit så att en ny kan lyckas spawna in
     {
         if (spawnedCharacter != null)
         {
@@ -33,7 +36,7 @@ public class GameManager : MonoBehaviour
             resetPermitSpawnable();
         }
     }
-    public void destroyPermit()
+    public void destroyPermit() // förstör förra id/ permit så att en ny kan lyckas spawna in
     {
         if (spawnableObj != null)
         {
@@ -41,4 +44,5 @@ public class GameManager : MonoBehaviour
             Debug.Log("Succesfully destroyed a permit");
         }
     }
+
 }

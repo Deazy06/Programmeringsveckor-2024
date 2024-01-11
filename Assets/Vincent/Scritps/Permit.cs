@@ -21,10 +21,10 @@ public class Permit : GameManager
 
     public void Start()
     {
-        spawnableObj = Instantiate(permit_Prefab, new Vector3(0, 0, 0), Quaternion.identity);
+        spawnableObj = Instantiate(permit_Prefab, new Vector3(0, 0, 0), Quaternion.identity); // spawnar ett id/ permit när spelet startar
     }
 
-    public void SpawnPermitOnCharacterSpawn()
+    public void SpawnPermitOnCharacterSpawn() //  spawnar permit
     {
         spawnableObj = Instantiate(permit_Prefab, new Vector3(0, 0, 0), Quaternion.identity);
         Debug.Log("Succesfully spawned a permit");
