@@ -37,18 +37,22 @@ public class PassportGenerator : MonoBehaviour
     "Dracois Beta",
     "Pegasus Majoris",
     "Centauri Alpha"};
-    List<string> fakePlantes = new List<string> {
+    List<string> fakePlanets = new List<string> {
+    "Nebulon Prime Alpha",
+    "Celestara IX Beta",
+    "Zygora Minoris Prime",
+    "Chronos Majoris Minor",
+    "Vortexia Prime Omega",
+    "Orionis Alpha Delta",
+    "Lyra Nova Gamma",
+    "Dracois Beta Prime",
+    "Pegasus Majoris Omega",
+    "Centauri Alpha Nova"
 };
 
-    int difficulty = 0;
 	public float z = 0;
-
-	const int baseFakeValue = 6;
-
-	public void SetDifficulty(int newDifficulty)
-	{
-		difficulty = newDifficulty;
-	}
+    public int value;
+	const int baseFakeValue = 5;
 
 	public void Generate()
 	{
@@ -58,35 +62,27 @@ public class PassportGenerator : MonoBehaviour
 
 		bool isLetterValid = true;
 
-		int value = Random.Range(1, baseFakeValue + 1 + difficulty);
+		value = Random.Range(1, 10);
+        print(value);
 
 		//generate incorrect letter
 		if (value >= baseFakeValue)
 		{
 			isLetterValid = false;
-
-			switch (value)
-			{
-				case baseFakeValue+4:
-					//fake city
-					planet = PickRandomFromList(fakePlantes);
-					break;
-			}
-
+				planet = PickRandomFromList(fakePlanets) + " is FAKE";
+                print("fake!");
 		}
 
-		string address = firstName + surname + "\n" + "\n" + planet;
+		string address = firstName + surname + "\n" + planet;
 
 		z+= .2f;
 		if (z > 8.5)
 			z = 0;
+
+        print(firstName);
+        print(planet);
+        print(surname);
 	}
-
-	//Letter MakeEvilLetter()
-	//{
-	//	return new Letter();
-	//}
-
 	string PickRandomFromList(List<string> list)
 	{
 		int index = Mathf.RoundToInt(Random.Range(0, list.Count));
