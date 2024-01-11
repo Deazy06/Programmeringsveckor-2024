@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PassportGenerator : MonoBehaviour
 {
-        List<string> firstNames = new List<string> {
+    List<string> firstNames = new List<string> {
     "Zarnak",
     "Xylara",
     "Quorin",
@@ -49,7 +49,7 @@ public class PassportGenerator : MonoBehaviour
     "Pegasus Majoris Omega",
     "Centauri Alpha Nova"
 };
-
+    // Random info about ppl
 	public float z = 0;
     public int value;
 	const int baseFakeValue = 5;
@@ -70,7 +70,6 @@ public class PassportGenerator : MonoBehaviour
 		{
 			isLetterValid = false;
 				planet = PickRandomFromList(fakePlanets) + " is FAKE";
-                print("fake!");
 		}
 
 		string address = firstName + surname + "\n" + planet;
