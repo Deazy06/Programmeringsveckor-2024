@@ -19,7 +19,7 @@ public class Guest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F))//press F, do action
         {
             Instantiate(objectToSpawn, new Vector3(0, 4, 0), Quaternion.identity);//Instatiate object at 0,4,0
         }
