@@ -56,7 +56,7 @@ public class PassportGenerator : MonoBehaviour
 	public float z = 0;
     public int value;
     public TextMesh text;
-	const int baseFakeValue = 5;
+	const int baseFakeValue = 7;
 
 	public void Generate()
 	{
