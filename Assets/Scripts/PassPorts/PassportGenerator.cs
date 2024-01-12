@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager.Requests;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PassportGenerator : MonoBehaviour
 {
@@ -27,31 +29,33 @@ public class PassportGenerator : MonoBehaviour
     "Quixar",
     "Xyloxis"};
     List<string> planets = new List<string> {
-    "Nebulon Prime",
-    "Celestara IX",
-    "Zygora Minor",
-    "Chronos Majoris",
-    "Vortexia Prime",
-    "Orionis Alpha",
-    "Lyra Nova",
-    "Dracois Beta",
-    "Pegasus Majoris",
-    "Centauri Alpha"};
+    "Mercury",
+    "Venus",
+    "Earth",
+    "Mars",
+    "Jupiter",
+    "Saturn",
+    "Uranus",
+    "Neptune",
+    "Pluto",
+    "Ceres"
+    };
     List<string> fakePlanets = new List<string> {
-    "Nebulon Prime Alpha",
-    "Celestara IX Beta",
-    "Zygora Minoris Prime",
-    "Chronos Majoris Minor",
-    "Vortexia Prime Omega",
-    "Orionis Alpha Delta",
-    "Lyra Nova Gamma",
-    "Dracois Beta Prime",
-    "Pegasus Majoris Omega",
-    "Centauri Alpha Nova"
-};
+    "Mercurion",
+    "Venusia",
+    "Eartharis",
+    "Marsis",
+    "Jupiteron",
+    "Saturna",
+    "Uranix",
+    "Neptoria",
+    "Plutonix",
+    "Cerion"
+    };
     // Random info about ppl
 	public float z = 0;
     public int value;
+    public TextMesh text;
 	const int baseFakeValue = 5;
 
 	public void Generate()
@@ -81,6 +85,8 @@ public class PassportGenerator : MonoBehaviour
         print(firstName);
         print(planet);
         print(surname);
+
+        text.text = address;
 	}
 	string PickRandomFromList(List<string> list)
 	{
