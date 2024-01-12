@@ -314,9 +314,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 671b193d116d19e42907b23e007464cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 0}
-  lines: []
-  textSpeed: 0
+  textComponent: {fileID: 942714322}
+  lines:
+  - 'Alien: andgjag'
+  - 'You: Helo'
+  - 'Alien: get me a room'
+  - You:Alr, zip them pants down
+  - 'alien: goodbye'
+  - "You: glory till jimmie \xE5kersson"
+  textSpeed: 1
 --- !u!1 &803629872
 GameObject:
   m_ObjectHideFlags: 0
