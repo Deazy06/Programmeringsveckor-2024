@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dra : MonoBehaviour
+public class DraNyckel : MonoBehaviour
 {
     public GameObject selectedObject;
     Vector3 offset;
