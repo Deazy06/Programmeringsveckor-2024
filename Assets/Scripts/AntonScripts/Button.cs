@@ -6,10 +6,19 @@ public class Button : MonoBehaviour
 {
 
     public GameObject objectToSpawn;
+
+
+    private bool spawn = true;// its true
    
+
 
     public void OnButtonPress()
     {
-        Instantiate(objectToSpawn, new Vector3(3, -3, 0), Quaternion.identity);//Instatiate object at 3,-3,0
+        if (spawn==true)
+        {
+            Instantiate(objectToSpawn, new Vector3(3, -3, 0), Quaternion.identity);//spawn object at 3,-3,0
+            spawn = false;//stops more from being able to instantiate
+        }
+       
     }
 }

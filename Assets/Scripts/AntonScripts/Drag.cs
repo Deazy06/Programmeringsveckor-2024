@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class Drag : MonoBehaviour
 {
-    private bool dragging = false;
+    private bool dragging = false;//it sets dragging to the opposite of true, fyi its false
     private Vector3 offset;
 
    
    
-    public BoxCollider2D area;
+    public BoxCollider2D area;//vararabol
 
     
     
 
     private void Start()
     {
-        GameObject Background = GameObject.FindWithTag("area");
+        GameObject Background = GameObject.FindWithTag("area");// finds the tag "area" like a detective
 
-        area = Background.GetComponent<BoxCollider2D>();
+        area = Background.GetComponent<BoxCollider2D>();//Yoink the background box collider to be used by the object
 
 
     }
