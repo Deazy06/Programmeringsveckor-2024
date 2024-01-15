@@ -322,7 +322,7 @@ MonoBehaviour:
   - You:Alr, zip them pants down
   - 'alien: goodbye'
   - "You: glory till jimmie \xE5kersson"
-  textSpeed: 1
+  textSpeed: 0.1
 --- !u!1 &803629872
 GameObject:
   m_ObjectHideFlags: 0

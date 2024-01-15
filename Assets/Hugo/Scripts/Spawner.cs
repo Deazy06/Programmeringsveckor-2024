@@ -11,7 +11,7 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -32,7 +32,7 @@ public class Spawner : MonoBehaviour
         Invoke("Animation1", 0);
         
         offScreenDestroy(latestCharacter);
-        Invoke("Spawn", 5);
+        Invoke("Spawn", 3);
     }
     public void spawnTimer2()
     {
@@ -40,7 +40,7 @@ public class Spawner : MonoBehaviour
         Invoke("Animation2", 0);
        
         offScreenDestroy(latestCharacter);
-        Invoke("Spawn", 5);
+        Invoke("Spawn", 3);
     }
     public void Animation1()
     {
@@ -54,5 +54,11 @@ public class Spawner : MonoBehaviour
     {
         Destroy(objectToDestroy, 1);
     }
-   
+
+    void firstSpawn()
+    {
+        //Instantiate(CharacterPrefab, new Vector3(0, 1.71f, 0), Quaternion.identity);
+        //print("ballsack");
+
+    }
 }

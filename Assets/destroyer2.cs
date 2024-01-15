@@ -20,7 +20,7 @@ public class destroyer2 : MonoBehaviour
 
     public void Timer()
     {
-        GameObject.Destroy(GetComponent<Spawner2>().latestCharacter, 1);
+        //GameObject.Destroy(GetComponent<Spawner2>().latestCharacter, 1);
 
 
     }

@@ -8,19 +8,26 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
-
+    public GameObject firstSpawn;
     private int index;
 
     // Start is called before the first frame update
     void Start()
     {
+        
         textComponent.text = string.Empty;
-        StartDialogue();
+        
+            
+        
+        
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (textComponent.text == lines[index])
@@ -49,7 +56,10 @@ public class DialogueManager : MonoBehaviour
     void StartDialogue()
     {
         index = 0;
-        StartCoroutine(TypeLine());
+        
+            StartCoroutine(TypeLine());
+        
+        
     }
 
     IEnumerator TypeLine()
@@ -60,4 +70,6 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(textSpeed);
         }
     }
+
+    
 }
