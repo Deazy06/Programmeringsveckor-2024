@@ -14,7 +14,10 @@ public class PassportMatching : MonoBehaviour
     void Start()
     {
         CheckObject();
-        gameObject.CompareTag("A");
+
+        GameObject Testguest = GameObject.FindWithTag("A");
+
+        objectToCheck = Testguest.GetComponent<GameObject>();
     }
 
     private void Update()
@@ -27,6 +30,7 @@ public class PassportMatching : MonoBehaviour
         {
             print("not matching");
         }
+
         
     }
 
