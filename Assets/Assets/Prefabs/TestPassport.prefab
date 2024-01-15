@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4211403418494659557}
   - component: {fileID: 66788632427684022}
   - component: {fileID: 8317858633765013392}
+  - component: {fileID: 3533557137416990024}
   m_Layer: 0
   m_Name: TestPassport
   m_TagString: Untagged
@@ -144,3 +145,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3533557137416990024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4269533548917917405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c822602cc8b79940b54ccadf2c1e13f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowedObjects: []
+  objectToCheck: {fileID: 0}
