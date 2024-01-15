@@ -503,7 +503,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &245717520
 RectTransform:
   m_ObjectHideFlags: 0
@@ -545,7 +545,7 @@ MonoBehaviour:
   - 'alien: goodbye'
   - "You: glory till jimmie \xE5kersson"
   textSpeed: 0.1
-  firstSpawnObject: {fileID: 2067513262010752473, guid: 9afb201c40d22f44ca9424deba725f1a, type: 3}
+  firstSpawn: {fileID: 0}
 --- !u!114 &245717522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -747,6 +747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc3fc81f2504e741b6e83940e553b21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue: {fileID: 0}
   CharacterPrefab: {fileID: 2067513262010752473, guid: 9afb201c40d22f44ca9424deba725f1a, type: 3}
   CharacterOnScreen: 0
 --- !u!4 &808081605
@@ -1357,7 +1358,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 849141f6e9c928646a6eaa461db7388d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterPrefab: {fileID: 2067513262010752473, guid: 9afb201c40d22f44ca9424deba725f1a, type: 3}
+  CharacterPrefab:
+  - {fileID: 2067513262010752473, guid: 9afb201c40d22f44ca9424deba725f1a, type: 3}
+  - {fileID: 9102064720103527038, guid: 85f964e240fd9d34abf7c9b6d1840d89, type: 3}
+  - {fileID: 9102064720103527038, guid: 6aa26673d57244949b35406e011e617f, type: 3}
+  - {fileID: 2067513262010752473, guid: b807d679ef9d2d04c8f6174efff1e63f, type: 3}
   latestCharacter: {fileID: 0}
 --- !u!114 &1160883117
 MonoBehaviour:
@@ -1728,7 +1733,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 849141f6e9c928646a6eaa461db7388d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterPrefab: {fileID: 2067513262010752473, guid: 9afb201c40d22f44ca9424deba725f1a, type: 3}
+  CharacterPrefab:
+  - {fileID: 2067513262010752473, guid: 9afb201c40d22f44ca9424deba725f1a, type: 3}
+  - {fileID: 9102064720103527038, guid: 85f964e240fd9d34abf7c9b6d1840d89, type: 3}
+  - {fileID: 2067513262010752473, guid: b807d679ef9d2d04c8f6174efff1e63f, type: 3}
+  - {fileID: 9102064720103527038, guid: 6aa26673d57244949b35406e011e617f, type: 3}
   latestCharacter: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

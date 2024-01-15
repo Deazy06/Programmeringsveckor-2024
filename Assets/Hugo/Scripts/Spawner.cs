@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject CharacterPrefab;
+    public GameObject[] CharacterPrefab;
     public GameObject latestCharacter;
    
     
@@ -17,12 +17,19 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
+    }
+
+    void Spak()
+    {
+        int i;
+        i = Random.Range(0, 2);
+      //  int[Random.Range] rand = { 0, 1, 2 };
     }
 
     public void Spawn()
     {
-       latestCharacter = Instantiate(CharacterPrefab, new Vector3(0, 1.71f, 0), Quaternion.identity);
+       latestCharacter = Instantiate(CharacterPrefab[Random.Range(0,CharacterPrefab.Length)], new Vector3(0, 1.71f, 0), Quaternion.identity);
     }
 
     public void spawnTimer()
