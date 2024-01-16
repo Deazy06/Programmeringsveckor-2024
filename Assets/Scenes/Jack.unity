@@ -539,8 +539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c822602cc8b79940b54ccadf2c1e13f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allowedObjects: []
-  objectToCheck: {fileID: 8998300035644350874, guid: 995c9b2a23190bd4b9d047661d75e822, type: 3}
+  choice: 1
   gameobject1: {fileID: 8998300035644350874, guid: 995c9b2a23190bd4b9d047661d75e822, type: 3}
   gameobject2: {fileID: 795487894}
 --- !u!1 &961091440

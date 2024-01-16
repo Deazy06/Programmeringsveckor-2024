@@ -5,7 +5,7 @@ using UnityEngine;
 public class PassportMatching : MonoBehaviour
 {
 
-    public List<GameObject> allowedObjects;
+    
 
     public bool choice;
 
