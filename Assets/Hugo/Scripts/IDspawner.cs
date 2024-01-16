@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class IDspawner : MonoBehaviour
 {
-    public GameObject ID;
+    public GameObject[] ID;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +19,11 @@ public class IDspawner : MonoBehaviour
 
     public void idSpawn()
     {
-        Instantiate(ID, new Vector3(0, -2, 0), Quaternion.identity);
+        Instantiate(ID[Random.Range(0, ID.Length)], new Vector3(0, -2, 0), Quaternion.identity);
     }
 
     void firstSpawn()
     {
-        Instantiate(ID, new Vector3(0, -2, 0), Quaternion.identity);
+        Instantiate(ID[Random.Range(0, ID.Length)], new Vector3(0, -2, 0), Quaternion.identity);
     }
 }

@@ -57,7 +57,7 @@ public class DialogueManager : MonoBehaviour
     {
         index = 0;
         
-            StartCoroutine(TypeLine());
+             StartCoroutine(TypeLine());
         
         
     }
