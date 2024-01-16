@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pointsystem : MonoBehaviour
+public class Pointsystem : PassportMatching
 {
 
-    public bool choice;
+    
 
     public int Money =  0;
 
@@ -23,7 +23,8 @@ public class Pointsystem : MonoBehaviour
         }
         else
         {
-            print("No point added");
+            print("points removed");
+            Money -= 100;
             //m�jlighet f�r "d�lig preformance" (man f�r sparken efter x antal fel)
         }
     }

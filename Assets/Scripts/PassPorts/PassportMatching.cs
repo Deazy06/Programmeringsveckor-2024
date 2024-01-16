@@ -6,7 +6,8 @@ public class PassportMatching : MonoBehaviour
 {
 
     public List<GameObject> allowedObjects;
-    
+
+    public bool choice;
 
     public GameObject gameobject1;
     public GameObject gameobject2;
@@ -18,10 +19,13 @@ public class PassportMatching : MonoBehaviour
         if (string.Compare(gameobject1.tag, gameobject2.tag) == 0)
         {
             print("Tags are equal.");
+            choice = true;
         }
         else
         {
             print("Tags are not equal.");
+
+            choice = false;
         }
 
     }
